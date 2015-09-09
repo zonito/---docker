@@ -1,6 +1,6 @@
 FROM python:2.7
 ADD requirements.txt /code/requirements.txt
-WORKDIR /codes
+WORKDIR /code
 RUN pip install -r requirements.txt
-ADD . /codes
+ADD . /code
 CMD ["python", "app.py"]
